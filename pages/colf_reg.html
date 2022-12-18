@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Техническая часть-->
+<head>
+    <!--Определяем кодировку символов документа-->
+    <meta charset="UTF-8">
+    <!--Информация для поисковых машин-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Область просмота в адаптивом дизайне-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Подключаем внешнюю таблицу стилей-->
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <!--Подключаем сценарии-->
+    <script src="script.js"></script>
+    <title>Регистрация на конференции</title>
+</head>
+<body>
+    <!--Шапка документа-->
+    <header>
+        <h1>Web-технологии</h1>
+        <nav>
+            <ol>
+                <li><a href="pages/login.html">Авторизация</a></li>
+                <li>Фотогалерея</li>
+                <li>Сообщения</li>
+                <li>Верстка по макету</li>
+                <li>Верстка по макету</li>
+            </ol>
+        </nav>
+    </header>
+    <!--Основное содержимое-->
+    <main>
+        <h2>Регистрация на конференции</h2>
+        <form action="" method="post">
+        <div>
+            <label for="user_name">Фамилия, имя, отчество</label>
+            <!--Маска ввода. Параметр pattern="[А-Я][а-я]+[ ][А-Я][а-я]+[ ][А-Я][а-я]+[ ][А-Я][а-я]+[ ]*"-->
+            <input type="text" name="user_name" id="user_name" required placeholder="Фамилия, имя, отчество" value="" 
+            ы
+            size="20">
+        </div> 
+        <div>
+            <label for="tel">Контактный телефон</label>
+            <input type="tel" name="tel" id="tel"  placeholder="Контактный телефон">
+        </div> 
+        <div>
+            <label for="email">Адрес электронной почты</label>
+            <input type="email" name="email" id="email"  placeholder="Адрес электронной почты">
+        </div> 
+        <div>
+            <label for="section">Выберите секцию конференции</label><br>
+            <select name="section" id="section">
+                <option value="mat">Математика</option>
+                <option value="fiz">Физика</option>
+                <option value="inf">Информатика</option>
+            </select>
+        </div>
+        <div>
+            <label for="speaker">Участие с докладом</label>
+            <input type="checkbox" name="speaker" id="speaker">
+        </div> 
+        <div>
+            <label for="report">Введите тему вашего доклада</label><br>
+            <textarea name="report" id="report" cols="30" rows="3"></textarea>
+        </div>
+        <div>
+            <div>Выберите форму участия</div>
+            <input type="radio" name="edutype" value="Очная" checked id="offline"> <label for="offline">Очная форма</label> <br>
+            <input type="radio" name="edutype" value="Заочная" id="online"> <label for="online">Дистанционная форма</label> <br>
+            <input type="radio" name="edutype" value="Очная_Заочная" id="online_offline"> <label for="online_offline">Смешанная форма</label> <br>
+        </div>
+        <div>
+            <input type="submit" value="Зарегистрироваться">
+        </div> 
+        </form>
+    </main>
+    <aside>Это боковая панель</aside>
+    <footer>
+        <h3>2021-2022 учебный год</h3>
+    </footer>
+</body>
+</html>
