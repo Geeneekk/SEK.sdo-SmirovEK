@@ -44,75 +44,75 @@
         <!--ФОРМА-->
         <form id="form" action="" method="post">
             <div class="form-control">
-                <!--Фамилия-->
-        <div>
-            <label for="lastname">Фамилия</label>
-            <!--Маска ввода. Параметр pattern="[А-Я][а-я]+[ ][А-Я][а-я]+[ ][А-Я][а-я]+[ ][А-Я][а-я]+[ ]*"-->
-            <input type="text" name="lastname" id="lastname" required placeholder="Фамилия" value=""> <br>
-        </div> 
-        <!--Имя-->
-        <div>
-            <label for="name">Имя</label>
-            <!--Маска ввода. Параметр pattern="[А-Я][а-я]+[ ][А-Я][а-я]+[ ][А-Я][а-я]+[ ][А-Я][а-я]+[ ]*"-->
-            <input type="text" name="name" id="name" required placeholder="Имя" value=""> <br>
-        </div>
-        <!--Логин--> 
-        <div>
-            <label for="login">Логин</label>
-            <!--Маска ввода. Параметр pattern="[А-Я][а-я]+[ ][А-Я][а-я]+[ ][А-Я][а-я]+[ ][А-Я][а-я]+[ ]*"-->
-            <input type="text" name="login" id="login" required placeholder="Логин" value="" > <br>
-        </div> 
-        <!--Пароль-->
-        <div>
-            <label for="password">Пароль</label>
-            <!--Маска ввода. Параметр pattern="[А-Я][а-я]+[ ][А-Я][а-я]+[ ][А-Я][а-я]+[ ][А-Я][а-я]+[ ]*"-->
-            <input type="password" name="password" id="password" required placeholder="Пароль" value="" > <br>
-        </div> 
-        <!--Выбор предмета (выпадающий SELECT, не менее 4)-->
-        <div>
-            <label for="section">Выберите предмет</label><br>
-            <select name="section" id="section">
-                <option value="mat">Математика</option>
-                <option value="fiz">Физика</option>
-                <option value="inf">Информатика</option>
-                <option value="prog">Программирование</option>
-            </select> <br>
-        </div>
-        <!--Выбор времени (с помощью radio, не менее 4)-->
-        <div>
-            <div>Выберите время</div><br>
-            <input type="radio" name="time" value="Утро" checked id="Morning"> <label for="Morning">Утро</label> <br>
-            <input type="radio" name="time" value="День" id="Day"> <label for="Day">День</label> <br>
-            <input type="radio" name="time" value="Вечер" id="Evening"> <label for="Evening">Вечер</label> <br>
-        </div>
-        <!--Форма контроля (с помощью checkbox: тест, собеседование, доклад, контрольная работа)-->
-        <div> Форма контроля</div><br>
-        <div>
-            <label for="Test">Тест</label>
-            <input type="checkbox" name="Test" id="Test"><br>
-        </div> 
-        <div>
-            <label for="Interview">Собеседование</label>
-            <input type="checkbox" name="Interview" id="Interview"><br>
-        </div> 
-        <div>
-            <label for="Test">Доклад</label>
-            <input type="checkbox" name="Report" id="Report"><br>
-        </div> 
-        <div>
-            <label for="Control_work">Контрольная работа</label>
-            <input type="checkbox" name="Control_work" id="Control_work"><br>
-        </div>
-        <br>
-        <!--Дополнительная информация (TEXTAREA)-->
-        <div>
-            <label for="info">Дополнительная информация</label><br>
-            <textarea name="info" id="info" cols="30" rows="3"></textarea> <br>
-        </div>
-        <!--Кнопка для отправки данных-->
-        <div>
-            <input type="submit" value="Отправить данные">
-        </div> 
+                    <!--Фамилия-->
+                <div>
+                    <label for="lastname">Фамилия</label>
+                    <!--Маска ввода. Параметр pattern="[А-Я][а-я]+[ ][А-Я][а-я]+[ ][А-Я][а-я]+[ ][А-Я][а-я]+[ ]*"-->
+                    <input type="text" name="lastname" id="lastname" required placeholder="Фамилия" value=""> <br>
+                </div> 
+                <!--Имя-->
+                <div>
+                    <label for="name">Имя</label>
+                    <!--Маска ввода. Параметр pattern="[А-Я][а-я]+[ ][А-Я][а-я]+[ ][А-Я][а-я]+[ ][А-Я][а-я]+[ ]*"-->
+                    <input type="text" name="name" id="name" required placeholder="Имя" value=""> <br>
+                </div>
+                <!--Логин--> 
+                <div>
+                    <label for="login">Логин</label>
+                    <!--Маска ввода. Параметр pattern="[А-Я][а-я]+[ ][А-Я][а-я]+[ ][А-Я][а-я]+[ ][А-Я][а-я]+[ ]*"-->
+                    <input type="text" name="login" id="login" required placeholder="Логин" value="" > <br>
+                </div> 
+                <!--Пароль-->
+                <div>
+                    <label for="password">Пароль</label>
+                    <!--Маска ввода. Параметр pattern="[А-Я][а-я]+[ ][А-Я][а-я]+[ ][А-Я][а-я]+[ ][А-Я][а-я]+[ ]*"-->
+                    <input type="password" name="password" id="password" required placeholder="Пароль" value="" > <br>
+                </div> 
+                <!--Выбор предмета (выпадающий SELECT, не менее 4)-->
+                <div>
+                    <label for="section">Выберите предмет</label><br>
+                    <select name="section" id="section">
+                        <option value="mat">Математика</option>
+                        <option value="fiz">Физика</option>
+                        <option value="inf">Информатика</option>
+                        <option value="prog">Программирование</option>
+                    </select> <br>
+                </div>
+                <!--Выбор времени (с помощью radio, не менее 4)-->
+                <div>
+                    <div>Выберите время</div><br>
+                    <input type="radio" name="time" value="Утро" checked id="Morning"> <label for="Morning">Утро</label> <br>
+                    <input type="radio" name="time" value="День" id="Day"> <label for="Day">День</label> <br>
+                    <input type="radio" name="time" value="Вечер" id="Evening"> <label for="Evening">Вечер</label> <br>
+                </div>
+                <!--Форма контроля (с помощью checkbox: тест, собеседование, доклад, контрольная работа)-->
+                <div> Форма контроля</div><br>
+                <div>
+                    <label for="Test">Тест</label>
+                    <input type="checkbox" name="Test" id="Test"><br>
+                </div> 
+                <div>
+                    <label for="Interview">Собеседование</label>
+                    <input type="checkbox" name="Interview" id="Interview"><br>
+                </div> 
+                <div>
+                    <label for="Test">Доклад</label>
+                    <input type="checkbox" name="Report" id="Report"><br>
+                </div> 
+                <div>
+                    <label for="Control_work">Контрольная работа</label>
+                    <input type="checkbox" name="Control_work" id="Control_work"><br>
+                </div>
+                <br>
+                <!--Дополнительная информация (TEXTAREA)-->
+                <div>
+                    <label for="info">Дополнительная информация</label><br>
+                    <textarea name="info" id="info" cols="30" rows="3"></textarea> <br>
+                </div>
+                <!--Кнопка для отправки данных-->
+                <div>
+                    <input type="submit" value="Отправить данные">
+                </div> 
             </div>
         </form>
     </main>

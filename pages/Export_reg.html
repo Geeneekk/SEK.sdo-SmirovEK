@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Техническая часть-->
+<head>
+    <!--Определяем кодировку символов документа-->
+    <meta charset="UTF-8">
+    <!--Информация для поисковых машин-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Область просмота в адаптивом дизайне-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Подключаем внешнюю таблицу стилей-->
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <!--Подключаем сценарии-->
+    <script src="script.js"></script>
+    <script src="../java/click.js"></script>
+    <title>Регистрация участника конференции</title>
+</head>
+<body>
+    <!--Шапка документа-->
+    <!--Шапка документа-->
+    <header>
+        <h1>Web-технологии</h1>
+        <nav>
+            <img src="../img/3.jpeg" alt="Фото №1" width="350px">
+            <br>
+            <br>
+            <ul id="menu">
+                <li type="none">
+                    <a href="../index.html">Главная</a>
+                </li>
+                <li type="none">
+                    <a href="#">Фотогалерея</a>
+                </li>
+                <li type="none">
+                    <a href="../pages/Katalog_resursov.html">Каталог ресурсов</a>
+                </li>
+                <li type="none">
+                    <a href="../pages/Form_anketa.html">Анкета</a>
+                </li>
+        </nav>
+        <br>
+    </header>
+    <!--Основное содержимое-->
+    <main>
+        <h2>Участник зарегистрирован</h2>
+        <div id="name"></div>
+        <script>
+                var data = location.search.substring(1).split('&'), s = '';
+                while(d = data.shift()) {
+                    d = d.split('=');
+                    s += 'Key: ' + d[0] + ', valye: ' + d[1] + '<br>';
+                }
+                document.getElementById('name').innerHTML = s; 
+            </script>
+            
+        <form id="form" >
+        <!--
+
+        1. action.php - другая страница/файл, куда вы будете передавать значения (можете установить свой вариант)
+        2. Все что находится в между <form> ... </form> - задаете для себя, какие поля вам нужны.
+        3. Последний элемент - передача по sumbit, обязателен.
+
+        -->
+
+
+        <div>
+            <label for="user_name">Фамилия, имя, отчество</label>
+            <br>
+            <!--Маска ввода. Параметр pattern="^[А-Яа-яЁё\s]+$"-->
+            <input type="text" pattern="^[А-Яа-яЁё\s]+$" 
+            name="user_name" id="user_name" required placeholder="Фамилия, имя, отчество" value="" size="20">
+        </div> 
+        <br>
+        <div>
+            <label for="tel">Контактный телефон</label>
+            <br>
+            <input type="tel" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" name="tel" id="tel2" 
+            required value="+7(___)___-__-__" placeholder="+7(___)___-__-__">
+        </div>
+        <br> 
+        <div>
+            <label for="email">Адрес электронной почты</label>
+            <br>
+            <input type="email" name="email" id="email" required  placeholder="Адрес электронной почты">
+        </div> 
+        <br>
+        <div>
+            <label for="section">Секция конференции</label>
+            <br>
+            <br>
+            <select name="section" required id="section">
+                <option value="mat">Математика</option>
+                <option value="fiz">Физика</option>
+                <option value="inf">Информатика</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="bday">Дата вашего рождения:</label>
+            <br>
+            <input type="date" id="bday" name="bday">
+        </div>
+        <br>
+        <div>
+            <label for="myCheck">Участие с докладом</label>
+            <br>
+            <input type="checkbox" id="myCheck" required onclick="myFunction()">
+        </div>
+        <br>
+        <div style="block-size: auto;">
+            <label for="report">Тема вашего доклада</label>
+            <br>
+            <br>
+            <textarea name="report" id="report" required cols="30" rows="3"></textarea>
+        </div>
+    </div>
+           <!--<div class="form-control"> 
+            <div>ФИО: <?php echo $_POST['user_name']; ?></div>
+            <div> Тел: <?php echo $_POST['tel']; ?> </div>
+            <div> Email-адрес: <?php echo $_POST['email']; ?></div>
+            <div> Выбор секции конференции: <?php echo $_POST['section']; ?> </div>
+            <div> Дата рождения: <?php echo $_POST['bday']; ?></div>
+            <div> Участие с докладом: <?php echo $_POST['myCheck']; ?> </div>
+            <div> Тема вашего доклада: <?php echo $_POST['report']; ?> </div>
+            </div>--> 
+        </form>
+    </main>
+    <aside> <!--Это боковая панель--></aside>
+    <footer>
+        <h3>2021-2022 учебный год</h3>
+    </footer>
+</body>
+</html>
